@@ -5,9 +5,9 @@ import { useTexture } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
 
-export default function Earth() {
+export default function Moon() {
   const meshRef = useRef();
-  const earthTexture = useTexture('/earth.jpg');
+  const moonTexture = useTexture('/moon.jpg');
 
   useFrame(() => {
     if (meshRef.current) {
@@ -19,8 +19,8 @@ export default function Earth() {
 
   // Create material with texture and bump map
   const material = new three.MeshPhongMaterial({
-    map: earthTexture,
-    bumpMap: earthTexture,
+    map: moonTexture,
+    bumpMap: moonTexture,
     bumpScale: 0.05,
   });
 
