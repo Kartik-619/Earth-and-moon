@@ -38,8 +38,8 @@ A beautifully rendered, interactive 3D model of the Earth-Moon system within a v
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/3d-solar-system.git
-   cd 3d-solar-system
+   git clone https://github.com/your-username/Earth-and-moon.git
+   cd Earth-and-moo
 2.  Install dependencies:
 
   npm install <br>
