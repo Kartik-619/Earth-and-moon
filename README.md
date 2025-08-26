@@ -1,12 +1,71 @@
-# React + Vite
+# 🌌 Interactive 3D Solar System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautifully rendered, interactive 3D model of the Earth-Moon system within a vast cosmic scene, built with **React Three Fiber**, **Three.js**, and **React**. Explore space with smooth orbit controls, realistic lighting, and mesmerizing animations — all in your browser!
 
-Currently, two official plugins are available:
+![Solar System Preview]
+*(Replace with actual screenshot or GIF later)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+<hr>
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🌍 **Realistic Earth** with texture and self-rotation
+- 🌔 **Moon orbiting Earth** with tidal lock simulation
+- ☀️ **Distant Sun** with directional lighting (sunlight effect)
+- 🌌 **Starfield background** for deep-space immersion
+- 🪐 **Cosmic drift** – the entire system slowly rotates
+- 🔍 **Smooth camera controls** with zoom limits
+- 🌑 **Moon shadow on Earth** during eclipse alignment
+- ⚙️ Built with performance and modularity in mind
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+<hr>
+## 🛠 Technologies Used
+
+- [React](https://reactjs.org/) – UI & component structure
+- [Three.js](https://threejs.org/) – 3D rendering engine
+- [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) – React renderer for Three.js
+- [@react-three/drei](https://docs.pmnd.rs/drei) – Useful helpers (controls, textures, lights)
+- Vite or Next.js (optional) – Fast development setup
+
+---
+
+## 🖥️ Live Demo
+
+👉 [View Demo] https://earth-and-moon.vercel.app
+
+---
+<hr>
+## 📦 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/3d-solar-system.git
+   cd 3d-solar-system
+2.  Install dependencies:
+
+  npm install
+3. Start the development server:
+
+ npm run dev
+
+4.Open http://localhost:3000 in your browser.
+<hr>
+
+<h3>🗺 Project Structure</h3>
+src/
+├── components/
+│   ├── Earth.jsx       – Textured rotating Earth
+│   ├── Moon.jsx        – Moon with texture and rotation
+│   ├── Sun.jsx         – Sun visual + directional light
+│   ├── StarBackground.jsx – Full-sky starfield
+│   └── canvas.jsx      – Main 3D scene with OrbitControls
+├── public/
+│   ├── earth.jpg       – Earth texture
+│   ├── moon.jpg        – Moon texture
+│   ├── sun.jpg         – Sun texture
+│   └── stars.jpg       – Starry sky background
+└── App.jsx             – Root component
+
+
+<hr>
