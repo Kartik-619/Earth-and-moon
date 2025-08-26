@@ -2,8 +2,6 @@
 
 A beautifully rendered, interactive 3D model of the Earth-Moon system within a vast cosmic scene, built with **React Three Fiber**, **Three.js**, and **React**. Explore space with smooth orbit controls, realistic lighting, and mesmerizing animations — all in your browser!
 
-![Solar System Preview]
-*(Replace with actual screenshot or GIF later)*
 
 ---
 <hr>
