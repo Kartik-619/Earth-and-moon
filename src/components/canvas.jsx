@@ -5,6 +5,7 @@ import Earth from './Earth';
 import Moon from './moon';
 import StarBackground from './star';
 import { useRef } from 'react';
+import Sun from './sun';
 
 function Rotate_scene() {
   const groupRef = useRef();
@@ -37,9 +38,9 @@ export default function Canvas_3() {
     <div className="w-screen h-screen bg-black">
       <Canvas camera={{ position: [0, 0, 30] }}>
         <StarBackground />
+        <Sun/>
         <Rotate_scene />
-        <ambientLight intensity={0.8} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
+        <ambientLight intensity={0.2} />
         <OrbitControls
           minDistance={20}
           maxDistance={100}

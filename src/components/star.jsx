@@ -8,7 +8,7 @@ function StarBackground() {
   const meshRef=useRef();
   useFrame(()=>{
     if(meshRef){
-      meshRef.current.rotation.y+=0.001;
+      meshRef.current.rotation.y+=0.0003;
     }
   })
 
