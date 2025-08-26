@@ -15,8 +15,8 @@ function Rotate_scene() {
     const t = clock.getElapsedTime();
 
     // Moon orbits Earth
-    moonOrbitRef.current.position.x = Math.sin(t * 0.5) * 13;
-    moonOrbitRef.current.position.z = Math.cos(t * 0.5) * 7;
+    moonOrbitRef.current.position.x = Math.sin(t * 0.5) * 10;
+    moonOrbitRef.current.position.z = Math.cos(t * 0.5) * 10;
     moonOrbitRef.current.position.y = Math. cos(t * 0.5) * 10;
 
     // Whole system rotates slowly

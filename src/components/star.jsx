@@ -4,7 +4,7 @@ import { useTexture } from '@react-three/drei';
 import { useFrame,useThree } from '@react-three/fiber';
 
 function StarBackground() {
-  const texture = useTexture('/star_map.png');
+  const texture = useTexture('/star.jpg');
   const meshRef=useRef();
   useFrame(()=>{
     if(meshRef){
