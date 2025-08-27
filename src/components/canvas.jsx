@@ -7,6 +7,7 @@ import StarBackground from './star';
 import { useRef } from 'react';
 import Sun from './sun';
 import Mars from './mars';
+import Venus from './venus';
 
 function Rotate_scene() {
   const groupRef = useRef();
@@ -26,6 +27,9 @@ function Rotate_scene() {
 
   return (
     <group ref={groupRef}>
+      <group position={[55,10,60]}>
+        <Venus scale={0.3}/>
+      </group>
       <Earth />
       <group ref={moonOrbitRef}>
         <Moon scale={0.6} />

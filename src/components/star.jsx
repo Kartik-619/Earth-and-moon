@@ -14,7 +14,7 @@ function StarBackground() {
 
   return (
     <mesh ref={meshRef}>
-      <sphereGeometry args={[500, 60, 40]} />
+      <sphereGeometry args={[600, 100, 40]} />
       <meshBasicMaterial
         map={texture}
         side={THREE.BackSide}  // Ensures inside of sphere is visible
